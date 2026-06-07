@@ -1,4 +1,7 @@
 const themeBtn = document.getElementById("themeBtn");
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+const links = document.querySelectorAll(".nav-links a");
 
 themeBtn.addEventListener("click", () => {
 
@@ -10,4 +13,17 @@ themeBtn.addEventListener("click", () => {
         themeBtn.textContent = "🌙";
     }
 
+});
+
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
 });
