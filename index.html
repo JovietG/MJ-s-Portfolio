@@ -18,7 +18,7 @@
             <span>✨</span> MJ' Portfolio
         </div>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -38,7 +38,10 @@
     <section id="home" class="home">
 
         <div class="content">
-            <h1>MARY JOY LAYUPAN</h1>
+            <h1>
+                <span id="typingName"></span>
+                <span class="cursor">|</span>
+            </h1>
             <p>Welcome to my Portfolio.</p>
         </div>
 
@@ -114,15 +117,33 @@
                 <div class="about-timeline">
 
                     <div class="timeline-item">
-                        <span>2025–2026</span>
-                        <h4>First Year</h4>
-                        <p>Built foundation in computing, programming, and information systems.</p>
+                        <button class="timeline-btn">
+                            <span>2025–2026 • First Year</span>
+                            <span class="arrow">▼</span>
+                        </button>
+
+                        <div class="timeline-content">
+                            <p>
+                                Built a strong foundation in Information Systems,
+                                Java Programming, Database Management,
+                                and problem-solving techniques.
+                            </p>
+                        </div>
                     </div>
 
                     <div class="timeline-item">
-                        <span>2026–2027</span>
-                        <h4>Incoming Second Year</h4>
-                        <p>Continuing to develop programming and database skills.</p>
+                        <button class="timeline-btn">
+                            <span>2026–2027 • Incoming Second Year</span>
+                            <span class="arrow">▼</span>
+                        </button>
+
+                        <div class="timeline-content">
+                            <p>
+                                Focusing on advanced programming,
+                                database connectivity, CRUD operations,
+                                and real-world system development.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
